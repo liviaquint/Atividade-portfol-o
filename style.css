@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: "Honk", system-ui;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #eee4da;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: sticky;
+  top: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: subir 3s ease forwards;
+}
+
+header a {
+  color: #6e0909;
+  text-decoration: none;
+  font-size: 38px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: subir 3s ease forwards;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  background-color: #eee4da;
+}
+
+.sobre p {
+  padding-right: 200px;
+  padding-left: 200px;
+  font-size: 26px;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #6e0909;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+
+.minhaFoto {
+  height: 700px;
+  width: 700px;
+  margin-right: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: subir 1s ease forwards;
+}
+
+.projetos {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee4da;
+}
+
+.box {
+  width: 300px;
+  height: 400px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding-right: 500px;
+  padding-left: 200px;
+}
+
+.imagemConstrucao {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  width: 250px;
+
+  background: #8d0d0d;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover .imagemConstrucao {
+  transform: scale(1.1);
+  /* zoom */
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6e0909;
+}
+
+footer div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 65px;
+  color: #6e0909;
+  padding-right: 200px;
+  padding-left: 200px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+button {
+  border-radius: 48px;
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: #d8c4ac;
+  border: none;
+}
+
+mark {
+  background-color: #6e0909;
+  color: white;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: subir 3s ease forwards;
+}
+
+@keyframes subir {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h3 {
+  font-size: 15px;
+  align-self: center;
+  color: #6e0909;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.linguagens {
+  padding-right: 40px;
+  padding-left: 80px;
+  cursor: pointer;
+}
+
+.box button {
+  background-color: #a00000;
+  color: #ffffff;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #e02424;
+}
+
+h5 {
+  color: #ffffff;
+  font-weight: normal;
+}
